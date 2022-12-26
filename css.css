@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #1E1E25;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px; 
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+  border-radius:10px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background: #FAB942 url('../img/question.gif') no-repeat center center / contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #D49D42;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: #6589F9 !important;
+}
