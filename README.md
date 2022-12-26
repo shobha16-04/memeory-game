@@ -1,4 +1,4 @@
-# memeory-game
+# Memeory-Game
 memeory game using HTML, CSS and basic JAVASCRIPT
 
 HTML--
